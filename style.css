@@ -1,0 +1,201 @@
+html, body{
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	color: white;
+	z-index: 1;
+	width: 100%;
+	padding: 20px 40px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+	.navbar li {
+		float: right;
+		list-style: none;
+		margin-right: 15px;
+	}
+
+	.navbar a{
+		color: rgba(255, 255, 255, 0.7);
+		text-decoration: none;
+	}
+
+	.navbar a:hover {
+		color: rgba(255, 255, 255, 1);
+	}
+
+	.navbar a:active {
+		color: rgba(255, 255, 255, 0.7);;
+	}
+
+	.brand {
+		float: left;
+	}
+
+
+#home {
+	background: url("img/home-background.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	margin-top: 59px;
+}
+
+
+.hero-container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: rgba(255, 255, 255, 0.7);
+	text-shadow: 0 1px 1px black;
+	margin: 0 auto;
+	padding: 20px 20px;
+}
+
+	.hero-container h1 {
+		margin-bottom: 10px;
+		font-size: 2.5rem;
+		font-weight: 100;
+	}
+
+	.hero-container h4{
+		margin-top: 10px;
+		font-size: 1.3rem;
+		font-weight: 300;
+	}
+
+hr {
+	border-color: rgba(255,140,0,0.3);
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+
+.secondary-section{
+	margin-top: 40px;
+	padding: 20px;
+
+}
+
+	.subtitle {
+		font-size: 2.4rem;
+	color: rgb(255,140,0);
+		margin-bottom: .8rem;
+	}
+
+
+
+.site-preview {
+	width: 100%;
+	height: 500px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+
+	.blurb{
+		color: #fff;
+		text-shadow: 1px 1px 0 #000;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+		position: relative;
+		text-decoration: none;
+		left: -1000px;
+		padding: 20px;
+		transition: all .6s;
+		font-size: 1.4rem;
+	}
+
+	.site-link {
+		text-decoration: none;
+	}
+
+.simon{
+	background: url('img/simon.png') center/cover;
+}
+	.simon:hover{
+		background: radial-gradient(rgba(0,0,0,0), 20%, rgba(0,0,0,1)),
+					url('img/simon.png') center/cover;
+	}
+
+.calc{
+	background: url('img/calculator.png') #eee center/100% 100%;	
+}
+	.calc:hover{
+		background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1)),
+					url('img/calculator.png') center/100% 100%;
+	}
+
+.pomodoro{
+	background: url('img/pomodoro.png') center/cover;
+}
+	.pomodoro:hover{
+		background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1)),
+					url('img/pomodoro.png') center/cover;
+	}
+
+.wiki-view {
+	background: url('img/wikipedia-viewer.png') center/cover;
+}	
+	.wiki-view:hover{
+		background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1)),
+					url('img/wikipedia-viewer.png') center/cover;
+	}
+
+/*
+===============
+  Grid Layout
+===============*/
+
+.row{
+	width: 100%;
+}
+
+.row > div{
+	padding-right: 40px;
+	margin-top: 40px;
+}
+
+.col-2-lg{
+	float: left;
+	width: 50%;
+}
+
+@media (max-width: 1000px) {
+	.col-md{
+		width: 100%;
+		float: none;
+	}
+}
+
