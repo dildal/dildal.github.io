@@ -146,7 +146,7 @@ hr {
 }
 	.simon:hover{
 		background: radial-gradient(rgba(0,0,0,0), 20%, rgba(0,0,0,1)),
-					url('img/simon.png') center/cover;
+					url('img/simon.png') center/100% 100%;
 	}
 
 .calc{
@@ -166,11 +166,11 @@ hr {
 	}
 
 .wiki-view {
-	background: url('img/wikipedia-viewer.png') center/cover;
+	background: url('img/wikipedia-viewer.png') top/cover;
 }	
 	.wiki-view:hover{
 		background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1)),
-					url('img/wikipedia-viewer.png') center/cover;
+					url('img/wikipedia-viewer.png') top/cover;
 	}
 
 /*
