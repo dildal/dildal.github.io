@@ -37,6 +37,21 @@ p {
 	color: rgba(255, 255, 255, 0.7);
 }
 
+	.hamburger{
+		float: right;
+		display: none;
+	}
+
+	ul{
+		transition: all .6s;
+	}
+
+		.line{
+			width: 35px;
+    		height: 5px;
+    		background-color: #fff;
+    		margin: 6px 0;
+		}
 	.navbar li {
 		float: right;
 		list-style: none;
@@ -267,4 +282,30 @@ media queries
 	.site-preview{
 		height: 25vh;
 	}
+
+	.hamburger{
+		display: block;
+	}
+
+
+
+	.navbar li{
+		float: left;
+		border-bottom: 2px solid #fff;
+		width: 100%;	
+		top: 0;
+		margin-bottom: 5px;
+		position: relative;
+		font-size: 1.2rem;
+	}
+
+	.menu-hide{
+		display: none;
+	}
+
+	.brand {
+		margin-top: .5rem;
+		font-size: 1.2rem;
+	}
+
 }
